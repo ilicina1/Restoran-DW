@@ -1,8 +1,8 @@
 # Restoran-DWH
 Projekat u sklopu predmeta 'Skladišta podataka' na Elektrotehničkom fakultetu Sarajevo.
 # Projekat sadrži:
-Izvještaj,
-Prezentacija,
+* Izvještaj,
+* Prezentacija,
 ER dijagram,
 Skripte za kreiranje tabela dimenzija i činjenica,
 Skripte za analizu, i graf(editovati ovo prije prezentovanj!!),
