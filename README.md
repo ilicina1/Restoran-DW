@@ -7,6 +7,7 @@ Projekat u sklopu predmeta 'Skladišta podataka' na Elektrotehničkom fakultetu 
 * Skripte za kreiranje tabela dimenzija i činjenica
 * Grafovi (Kreirani u Power BI)
 * ETL proces (Kreiran u Microsoft Visual Studio)
+* Kocka
 * Relacijska baza podataka (.bak)
 * Skladište podataka (.bak)
 # Projekat implementirali:
