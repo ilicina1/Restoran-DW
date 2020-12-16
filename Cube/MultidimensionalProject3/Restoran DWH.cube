@@ -1,0 +1,479 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b732dd19-5010-41e1-9ecf-7c012ae60b28" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Restoran DWH</ID>
+  <Name>Restoran DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="dd67231a-f124-47dc-a5d5-f891172fb973">
+      <ID>Dim Table</ID>
+      <Name>Dim Table</Name>
+      <DimensionID>Dim Table</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8e42cd1a-d66f-4db8-938e-b3cbbbe9c0b8">
+          <AttributeID>Dw Table Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bb6c8f9a-468c-43c0-8642-866c889e1dee">
+      <ID>Dim Table 1</ID>
+      <Name>Dim Table 1</Name>
+      <DimensionID>Dim Table 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e6ec164e-9bca-4a4c-ac89-a02886750188">
+          <AttributeID>Dw Table Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d57514b1-25a7-43fc-8e00-4fc2f8f2e6e5">
+      <ID>Dim Reservations</ID>
+      <Name>Dim Reservations</Name>
+      <DimensionID>Dim Reservations</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fca6488d-3cb0-481b-ad3b-49609c8c5521">
+          <AttributeID>Dw Reservation Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bef43937-daaf-410e-aedc-d5c0db061fcc">
+      <ID>Dim Reservations 1</ID>
+      <Name>Dim Reservations 1</Name>
+      <DimensionID>Dim Reservations 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bef41435-cef4-44ec-8a9e-1299b66b9908">
+          <AttributeID>Dw Reservation Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2a3dedf7-9847-4b23-a9f8-d263b942d0b1">
+      <ID>Dim Employee 1</ID>
+      <Name>Dim Employee 1</Name>
+      <DimensionID>Dim Employee 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7f92e1ac-8e13-431b-a46a-21c95ccf489d">
+          <AttributeID>Dw Employee Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="31a66801-5d05-4f8a-8003-ab641041e13b">
+      <ID>Dim Customer</ID>
+      <Name>Dim Customer</Name>
+      <DimensionID>Dim Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5a52f90b-39e7-4a01-aa83-f48408079cfd">
+          <AttributeID>Dw Customer Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3f05e9de-95f6-46a6-ab39-97b989f91626">
+      <ID>Dim Table</ID>
+      <Name>Dim Table</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1f16781a-329f-4407-a60d-173fb1b6c2c1">
+          <ID>Number Of Seats</ID>
+          <Name>Number Of Seats</Name>
+          <Source dwd:design-time-name="05af732f-e402-4a61-9cb8-6a59066ea110">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b0bbef32-1de4-4f47-9cc9-3f0edeec88b2">
+              <TableID>dbo_DimTable</TableID>
+              <ColumnID>number_of_seats</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b65bd69d-d6d2-42db-b1d8-209b11d198f6">
+          <ID>Dim Table Count</ID>
+          <Name>Dim Table Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a73ac510-028e-4848-b21f-c610ec60f74c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f9097aae-6ad5-4c07-8b4f-2dfec87df90c">
+              <TableID>dbo_DimTable</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="20a327e4-8607-4fd8-8d04-ed4c9181a721">
+          <CubeDimensionID>Dim Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bf364220-bc80-46a4-a6b3-b6e24bede763">
+              <AttributeID>Dw Table Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3d5b4cbb-5755-4207-a7ae-2a857eb09871">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7aa48283-0bd6-41f1-b0b8-747dc9d9541c">
+                    <TableID>dbo_DimTable</TableID>
+                    <ColumnID>dw_table_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5fb45170-4b9d-4334-a3c4-b75695f3a77a">
+          <CubeDimensionID>Dim Table 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1762670-e1c8-4eb4-ab93-2f097ced5db5">
+              <AttributeID>Dw Table Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="49880e71-a680-4351-a9a3-570c6b0a0aa9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9940f828-346d-4550-9c5f-bc883195834e">
+                    <TableID>dbo_DimTable</TableID>
+                    <ColumnID>dw_table_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e3b0d855-afe0-4738-ade5-6fc806b4effa">
+      <ID>Dim Reservations</ID>
+      <Name>Dim Reservations</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="8f8bdd0d-f5a0-4219-b7da-65e3b8e14fc0">
+          <ID>Dim Reservations Count</ID>
+          <Name>Dim Reservations Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3420808f-1a64-4e35-926a-5ea5548d4cae">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ab1421bf-c980-4625-b5f9-fb21fc974d39">
+              <TableID>dbo_DimReservations</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="912ec045-f0fa-44c8-96d0-0abf464c9706">
+          <CubeDimensionID>Dim Reservations</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a4ec9efe-6c03-4a10-9c4b-815816431626">
+              <AttributeID>Dw Reservation Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="567fa39a-30f0-40dd-826d-e5c75c0afca6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="74619ed2-afa6-4dff-a647-d0f31d4697e6">
+                    <TableID>dbo_DimReservations</TableID>
+                    <ColumnID>dw_reservation_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f9d6ddbd-f769-4cd0-944d-d0a942b0c4a4">
+          <CubeDimensionID>Dim Reservations 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2c77f992-f56f-44cc-8598-737d96b93ed0">
+              <AttributeID>Dw Reservation Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="21e9dd65-99a1-4168-ac5f-ae3d3ce55d8e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b546e688-d900-4cd5-82db-de389c62954b">
+                    <TableID>dbo_DimReservations</TableID>
+                    <ColumnID>dw_reservation_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="971772d3-7737-40aa-8500-6b2dfa1d3672">
+      <ID>Dim Employee</ID>
+      <Name>Dim Employee</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="491dc0d6-1a19-471b-8ed1-05fe457d5d7a">
+          <ID>Employee Id</ID>
+          <Name>Employee Id</Name>
+          <Source dwd:design-time-name="27c2a328-3507-4ec2-a0e1-106478be3449">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3997f7d9-f19f-416a-8056-9f1027e8f7a7">
+              <TableID>dbo_DimEmployee</TableID>
+              <ColumnID>employee_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="60d4cef5-b25c-4a6a-b659-ee123732858f">
+          <ID>Manager Id</ID>
+          <Name>Manager Id</Name>
+          <Source dwd:design-time-name="cfba3c5a-dbe7-4f78-ab95-337aad7a2f4f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="282b82fb-c9d1-45bc-adca-78b10f2e81aa">
+              <TableID>dbo_DimEmployee</TableID>
+              <ColumnID>manager_id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f9e1238f-785c-4242-afec-fa616241dac9">
+          <ID>Dim Employee Count</ID>
+          <Name>Dim Employee Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0aadf062-d357-4f7c-a05f-5257961dd1e3">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="98e0d51b-3b13-4554-abef-d49efef36f2b">
+              <TableID>dbo_DimEmployee</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8dcdf3b1-3d77-4cfe-a8c0-0b797e687a9f">
+          <CubeDimensionID>Dim Employee 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0311922c-c085-40a9-b4ca-0cba29ef2709">
+              <AttributeID>Dw Employee Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="80ec3a91-38b7-497d-8213-1d0b8864dc7a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5757080-8874-475c-9055-182c0b2b922a">
+                    <TableID>dbo_DimEmployee</TableID>
+                    <ColumnID>dw_employee_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="4416796c-d821-4799-a1d1-5364da280092">
+      <ID>Dim Customer</ID>
+      <Name>Dim Customer</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="47f6c016-0403-4546-ac84-448beec451a7">
+          <ID>Dim Customer Count</ID>
+          <Name>Dim Customer Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="42d58e7b-6572-4693-8d6b-eb84271304b5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="eb0667b2-bb6e-402d-8891-0eb51db16d59">
+              <TableID>dbo_DimCustomer</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8b7ee8fb-7cdf-4a3b-b9da-50264f514bf3">
+          <CubeDimensionID>Dim Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fa15c27f-da0c-4713-bc46-6894bac8a788">
+              <AttributeID>Dw Customer Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91de2658-5b0b-46b9-af8d-893f2133e3e2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e2143117-783d-45e4-9350-7b5cb715c96a">
+                    <TableID>dbo_DimCustomer</TableID>
+                    <ColumnID>dw_customer_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="683f004c-4d9c-439d-a28e-7f49855b53d7">
+      <ID>Fact Usage</ID>
+      <Name>Fact Usage</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2d518f29-48a6-496e-91e7-41d2925114ec">
+          <ID>Total Used</ID>
+          <Name>Total Used</Name>
+          <Source dwd:design-time-name="dc853a75-c193-4bb3-a4f1-eded43fc5998">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8e0f6d9f-8364-4a44-85da-e052e536b9ee">
+              <TableID>dbo_FactUsage</TableID>
+              <ColumnID>total_used</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7b910c20-1f38-42c8-89ba-5964c6f23505">
+          <ID>Fact Usage Count</ID>
+          <Name>Fact Usage Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="26cad650-43ba-4903-b985-f6ca42d3f074">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5cd3d03e-f110-4a58-8be2-7e5f365a7ea4">
+              <TableID>dbo_FactUsage</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="716bbe8f-9a73-4284-8095-9688a9a7ae12">
+          <CubeDimensionID>Dim Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5e192538-128f-4a04-9958-926cfef8e673">
+              <AttributeID>Dw Customer Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f1c6e46b-519e-44ed-8724-baa4bdb98143">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d18c57f4-6937-40ec-b3f5-02d0dcd0627f">
+                    <TableID>dbo_FactUsage</TableID>
+                    <ColumnID>dw_customer_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="92ee0ca1-55fe-4444-afad-d5de8889a85d">
+          <CubeDimensionID>Dim Employee 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0ffcd1eb-bac6-49a3-a37d-23385f808ad6">
+              <AttributeID>Dw Employee Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9ba73f3b-4204-4ee4-a335-11b49da0754f">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0c958b5-bb96-41bc-90e7-d3739c6ae659">
+                    <TableID>dbo_FactUsage</TableID>
+                    <ColumnID>dw_employee_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9530b42d-ac0a-4331-849c-777a399c3389">
+          <CubeDimensionID>Dim Reservations</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="66150194-89cc-41e3-b56a-a7938c719a98">
+              <AttributeID>Dw Reservation Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="90d6d591-e8be-4d3b-a72f-617792d7ab44">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6edb287-4985-4083-9e49-c58003e1501f">
+                    <TableID>dbo_FactUsage</TableID>
+                    <ColumnID>dw_reservation_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f9f2b8a3-fa9e-4236-9279-4921731ab89b">
+          <CubeDimensionID>Dim Table</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b30a27fc-84b1-4612-a391-2b81db013051">
+              <AttributeID>Dw Table Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8ee61532-46d3-4097-9d54-82cd26e47c42">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3338af2a-3d71-4409-95d8-058581945d71">
+                    <TableID>dbo_FactUsage</TableID>
+                    <ColumnID>dw_table_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="a9d1fe0a-cae1-45e5-bd91-dc88c1456760">
+          <CubeDimensionID>Dim Reservations 1</CubeDimensionID>
+          <MeasureGroupID>Dim Reservations</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="7efce9e2-e539-4f02-b134-072ed6cd1658">
+    <DataSourceViewID>Restoran DWH</DataSourceViewID>
+  </Source>
+</Cube>
