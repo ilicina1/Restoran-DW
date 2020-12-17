@@ -1,4 +1,4 @@
-# Restoran-DWH
+# Restoran-DW
 Projekat u sklopu predmeta 'Skladišta podataka' na Elektrotehničkom fakultetu Sarajevo.
 # Projekat sadrži:
 * Izvještaj
